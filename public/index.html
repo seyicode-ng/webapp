@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smash-It Weather App</title>
+    <meta name="description" content="Smash-It Weather App">
+    <meta name="theme-color" content="#ff0b0b" />
+    <link rel="stylesheet" href="./css/app.css"/>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body onload="init()">
+    <div class="container">
+        <header>
+            <input type="text" name="" id="enter-box" placeholder="Enter the city"/><br>
+            <h5 id="error"></h5>
+        </header>
+        <main>
+            <section class="location">
+                <div class="state"></div>
+                <div class="date"></div>
+            </section>
+            <div class="current">
+                <div class="temp"></div>
+                <div class="weather"></div>
+                <div class="high-low"></div>
+            </div>
+        </main>
+    </div>    
+</body>
+<script src="./script/app.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA3dM16zuxTKjmO4BsbJhHrWbOObxBBi70",
+    authDomain: "weather-project-6c3f4.firebaseapp.com",
+    databaseURL: "https://weather-project-6c3f4.firebaseio.com",
+    projectId: "weather-project-6c3f4",
+    storageBucket: "weather-project-6c3f4.appspot.com",
+    messagingSenderId: "1051378432044",
+    appId: "1:1051378432044:web:c1f5fda687f0f2e19e7989",
+    measurementId: "G-S4S3CRP42H"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</html>

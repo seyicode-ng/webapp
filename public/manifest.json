@@ -1,0 +1,11 @@
+
+{
+  "name": "Smash It weather App",
+  "short_name": "Weather App",
+  "description": "Sylvester Presly's Smash it weather app",
+  "start_url": "/index.html",
+  "background_color": "#d4d4d4",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ff0b0b"
+}
